@@ -100,7 +100,7 @@ public class GameLogic {
             } else if (input == 2) {
                 characterInfo();
             } else {
-                isRunning = false
+                isRunning = false;
             }
         }
     }
