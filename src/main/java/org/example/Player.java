@@ -7,8 +7,8 @@ public class Player extends Character{
     public int numAtkUpgrades, numDefUpgrades;
 
     // Arrays to store skills
-    public String[] atkUpgrades = {"Strength", "Power", "Might", "Godlike Strength"};
-    public String[] defUpgrades = {"Heavy Bones", "Stoneskin", "Scale Armor", "Holy Aura"};
+    public String[] atkUpgrades = {"Alltagstaugliche Stärke", "Power", "Might", "Godlike Strength"};
+    public String[] defUpgrades = {"Robuster Körperbau", "Stoneskin", "Scale Armor", "Holy Aura"};
 
     // Player specific constructor
     public Player(String name) {
@@ -34,7 +34,7 @@ public class Player extends Character{
     // let the player choose a trait of either skill path
     public void chooseTrait(){
         GameLogic.clearConsole();
-        GameLogic.printHeading("Choose a trait:");
+        GameLogic.printHeading("Wähle eine Eigenschaft für dich aus:");
         System.out.println("(1) " + atkUpgrades[numAtkUpgrades]);
         System.out.println("(2) " + defUpgrades[numDefUpgrades]);
         // get the players choice:

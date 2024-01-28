@@ -6,6 +6,20 @@ public class GameLogic {
 
     static Player player;
     static boolean isRunning;
+
+    //Story elements
+
+    public  static int place = 0, act;
+    public static String[] places = {
+            "Duale Hochschule Karlsruhe",
+            "Mühlburger Tor",
+            "Europaplatz",
+            "Marktplatz",
+            "Werderplatz",
+            "Durlacher Tor",
+            "Oststadt",
+            "Durlacher Altstadt",
+            "Wohnheim"};
     // method to get user input from console
     public static int readInt(String prompt, int userChoices){
         int input;
@@ -81,7 +95,8 @@ public class GameLogic {
     // printing the main menu
     private static void printMenu() {
         clearConsole();
-        printHeading("MENÜ");
+        printHeading("MENÜ" + "\n" + "Momentaner Standort: " + places[place]);
+        printSeperator(20);
         System.out.println("Bitte eine Auswahl treffen: ");
         printSeperator(20);
         System.out.println("(1) Abenteuer fortzusetzen ");
@@ -136,9 +151,16 @@ public class GameLogic {
                 nameSet = true;}
         } while(!nameSet);
 
+        // print the intro of story
+        Story.printIntro();
+
+
         //create new player object with the name
         player = new Player(name);
 
+        // print first chapter
+
+        Story.printChapterOne();
         // setting isRunning to true, so the game loop can continue
         isRunning = true;
 

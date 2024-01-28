@@ -19,7 +19,7 @@ public class Story {
                 + "Du bist dir sicher, dass der Katastrophenschutz das schon regeln wird.");
         System.out.println(
                 "Dein Problem hingegen ist, dass du unbedingt eine Abgabe für Software-Engineering fertigstellen musst und dein Wohnheim " + "\n"
-                + "leider in Durlach liegt. Was ein Pech, dass du heute das Tablet, statt dem Laptop mitgenommen hast!");
+                + "leider in Durlach liegt. Was ein Pech, dass du heute dein Tablet, anstelle deines Laptops dabei hast!");
         System.out.println(
                 "Du hast keine Zeit, um auf den Katastrophenschutz zu warten. SE ist wichtiger, also läufst du los... ");
         GameLogic.anythingToContinue();
@@ -31,7 +31,7 @@ public class Story {
         System.out.println("DER WEG AUS DER DHBW");
         GameLogic.printSeperator(30);
         System.out.println(
-                "Du stehst im Flur vor deinem Hörsaal und überlegst, wie du heimkommst. Du erfährst, dass die Bahn nur bis zum MÜhlburgertor fährt."
+                "Du stehst im Flur vor deinem Hörsaal und überlegst, wie du heimkommst. Du erfährst, dass die Bahn nur bis zum Mühlburgertor fährt."
                 + "\n" + "Das Casino ist leider schon geschlossen und du bekommst keine Snacks mehr."
                 + "\n" + "Deine Gedanken werden paranoider... du könntest die herumliegenden Objekte zum Selbstschutz klauen! ") ;
         System.out.println("Vor dir liegt ein Besenstock ohne Besenkopf und der Pelzmantel der aggressiven, russischen Tellerwäscherin aus der Mensa.");
