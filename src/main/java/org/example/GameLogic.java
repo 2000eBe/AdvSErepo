@@ -94,7 +94,7 @@ public class GameLogic {
 
         while (isRunning){
             printMenu();
-            int input = readInt("-> ", 3):
+            int input = readInt("-> ", 3);
             if(input == 1){
                 continueJourney();
             } else if (input == 2) {
